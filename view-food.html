@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Food</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Available Food</h1>
+    <p>Food donations currently available for pickup</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="donate.html">Donate Food</a>
+    <a href="view-food.html">Available Food</a>
+</nav>
+
+<section class="content">
+    <h2>Available Food List</h2>
+    <button onclick="clearAllFood()" style="margin-bottom:15px;">
+        Clear All Donations
+    </button>
+    <h3 id="itemCount">Available Food (0 items)</h3>
+    <div class="table-container">
+        <table id="foodTable">
+            <tr>
+                <th>Food Item</th>
+                <th>Quantity</th>
+                <th>Pickup Location</th>
+                <th>Expiry Time</th>
+                <th>Action</th>
+                <th>Edit</th>
+            </tr>
+        </table>
+    </div>
+    
+    
+    
+
+</section>
+
+</body>
+</html>

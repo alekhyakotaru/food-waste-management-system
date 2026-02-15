@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Register</h1>
+    <p>Join as a Donor or NGO</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="donate.html">Donate Food</a>
+    <a href="view-food.html">Available Food</a>
+</nav>
+
+<section class="content">
+    <h2>User Registration Form</h2>
+
+    <form>
+        <div class="radio-group">
+            <label>User Type:</label>
+        
+            <div class="radio-options">
+                <label>
+                    <input type="radio" name="userType" value="Donor" required>
+                    Donor
+                </label>
+        
+                <label>
+                    <input type="radio" name="userType" value="NGO">
+                    NGO
+                </label>
+            </div>
+        </div>
+        
+
+        <br><br>
+
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email" required><br><br>
+
+        <label>Phone:</label><br>
+        <input type="tel" placeholder="Enter your phone number" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+</body>
+</html>

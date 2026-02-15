@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate Food</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Donate Food</h1>
+    <p>Help reduce food waste by donating excess food</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="donate.html">Donate Food</a>
+    <a href="view-food.html">Available Food</a>
+</nav>
+
+<section class="content">
+    <h2>Food Donation Form</h2>
+    <div id="successMsg" style="
+display:none;
+background:#e8f8f0;
+color:#27ae60;
+padding:10px;
+border-radius:6px;
+margin-bottom:15px;
+text-align:center;">
+    Food donated successfully!
+</div>
+
+    
+    <form id="donateForm">
+
+        <label>Food Item Name:</label><br>
+        <input type="text" id="foodName" placeholder="e.g. Rice, Biryani" required><br><br>
+    
+        <label>Quantity:</label><br>
+        <input type="number" id="quantity" placeholder="Number of servings" required><br><br>
+    
+        <label>Pickup Location:</label><br>
+        <input type="text" id="location" placeholder="Enter pickup address" required><br><br>
+    
+        <label>Expiry Time:</label><br>
+        <input type="time" id="expiryTime" required><br><br>
+    
+        <button type="submit">Submit Donation</button>
+    
+    </form>
+    
+</section>
+
+</body>
+</html>
