@@ -46,6 +46,29 @@ document.addEventListener("DOMContentLoaded", function () {
             donateForm.reset();
         });
     }
+    // ===============================
+// Handle Register Form
+// ===============================
+const registerForm = document.getElementById("registerForm");
+
+if (registerForm) {
+    registerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const successMsg = document.getElementById("registerSuccess");
+
+        if (successMsg) {
+            successMsg.style.display = "block";
+
+            setTimeout(() => {
+                successMsg.style.display = "none";
+            }, 3000);
+        }
+
+        registerForm.reset();
+    });
+}
+
 
     // ===============================
     // Display Food in Available Page
